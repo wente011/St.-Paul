@@ -48,9 +48,6 @@ You're going to need API tokens for 1) The St. Paul Socrata website. 2) API toke
 
 ```{r data loading, include=FALSE}
 #Your Socrata credentials here. 
-Sys.getenv("SOCRATA_EMAIL", "wente011@gmail.com")
-Sys.getenv("SOCRATA_PASSWORD", "2018Data23!")
-token="lxfC2o86PruIlgfIimrzGb8Q5"
 
 #load the crime data using the RSocrata function.
 crime <- read.socrata("https://information.stpaul.gov/resource/xytm-mbqv.csv",app_token =token)
@@ -114,8 +111,7 @@ sue2$idx<-NULL
 ```{r weather data, include=FALSE, warning = FALSE}
 
 wd<-"https://www.ncdc.noaa.gov/cdo-web/api/v2/{endpoint}"
-tok<-"ZsgzPKqkVyrdJeHfPpuCaCmtfFhtimYv"
-options(noaakey = tok) #TOKEN HERE
+options(noaakey = tok) #TOKEN HERE for NOAA
 
 ncdc_datasets(stationid = "GHCND:USW00014922",token=tok)  #view datasets for Minneapolis-St. Paul airport.
 

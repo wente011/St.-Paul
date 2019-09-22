@@ -3,9 +3,9 @@ library(rgdal)
 library(sf)
 library(raster)
 
-ckey="47b95b7affd600590d66898d665397c137bf310e"  #TOKEN (CENSUS HERE)
-
-census_api_key(ckey, install = TRUE)
+ #TOKEN (CENSUS HERE)
+#ckey="yourtoken"
+census_api_key(ckey, install = TRUE) 
 
 url<-"https://www2.census.gov/programs-surveys/popest/geographies/2016/all-geocodes-v2016.xlsx"
 
