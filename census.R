@@ -1,3 +1,5 @@
+#Currently working on mapping functions in the is R code, with the intention of pulling in Census data. 
+
 library(tidycensus)
 library(rgdal)
 library(sf)
