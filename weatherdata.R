@@ -4,8 +4,7 @@ library(tidyverse)
 
 
 wd<-"https://www.ncdc.noaa.gov/cdo-web/api/v2/{endpoint}"
-tok<-"ZsgzPKqkVyrdJeHfPpuCaCmtfFhtimYv"
-options(noaakey = tok)
+options(noaakey = tok)  #Need to define your token here. 
 
 ncdc_datasets(stationid = "GHCND:USW00014922",token=tok)  #view datasets for Minneapolis-St. Paul airport.
 
